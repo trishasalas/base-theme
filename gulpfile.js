@@ -1,5 +1,6 @@
 // Include gulp
 var gulp = require('gulp');
+require('gulp-grunt')(gulp); // add all the gruntfile tasks to gulp
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -24,6 +25,10 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(''));
 });
 
+gulp.task('rtl', function() {
+    gulp.run('grunt-cssjanus');
+});
+
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
@@ -46,10 +51,9 @@ gulp.task('compress', function () {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    livereload.listen();
     gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'compress', 'watch']);
+gulp.task('default', ['lint', 'sass', 'rtl', 'scripts', 'compress', 'watch']);

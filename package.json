@@ -16,6 +16,7 @@
   "author": "Trisha Salas",
   "license": "GPlv2+",
   "devDependencies": {
+    "grunt-cssjanus": "^0.2.2",
     "gulp": "^3.8.8",
     "gulp-concat": "^2.4.1",
     "gulp-css-flip": "^0.4.0",
