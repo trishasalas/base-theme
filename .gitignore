@@ -1,5 +1,7 @@
-/.idea/
 .DS_store
-/node_modules/.bin
+node_modules/.bin
 .idea/*
 encodings.xml
+.name
+base-theme.iml
+jsLibraryMappings.xml
