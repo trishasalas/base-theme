@@ -6,12 +6,26 @@
  *
  * @package starter-theme
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+
+	<?php
+	/*--------------------------------------------------------------------------------
+	 *
+	 *	The important thing in the viewport meta tag is what's not here: zoom control.
+	 *  Limiting or disallowing zoom on mobile prevents visitors from being
+	 *  able to enlarge your content (text or images) for a better reading or
+	 *  viewing experience.
+	 *
+	 * -----------------------------------------------------------------------------*/
+	?>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
