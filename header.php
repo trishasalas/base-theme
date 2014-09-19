@@ -27,10 +27,10 @@
 <?php
 	/*-----------------------------------------------------------------------------------
 	 *
-	 *	The important thing in the viewport meta tag is what's not here: zoom control.
-	 *  Limiting or disallowing zoom on mobile prevents visitors from being
-	 *  able to enlarge your content (text or images) for a better reading or
-	 *  viewing experience.
+	 *	The important thing in the viewport meta tag is what's not here: zoom
+	 *	control. Limiting or disallowing zoom on mobile prevents visitors from
+	 *	being able to enlarge your content (text or images) for a better reading
+	 *	or viewing experience.
 	 *
 	 * --------------------------------------------------------------------------------*/
 ?>
